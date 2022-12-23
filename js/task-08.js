@@ -13,10 +13,11 @@ const isValid = event => {
         email,
         password,
     };
-    console.log(formDataObject);
 
     if (email === '' || password === '') {
         return alert('Enter field value!');
+    } else {
+        console.log(formDataObject);
     }
 
     event.currentTarget.reset();

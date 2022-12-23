@@ -1,7 +1,9 @@
 const inputEl = document.querySelector('#validation-input');
 
 const isValid = event => {
-    if (event.currentTarget.value.length == inputEl.getAttribute('data-length')) {
+    const inputLength = `${event.currentTarget.value.length}`;
+
+    if (inputLength === inputEl.getAttribute('data-length')) {
         inputEl.classList.add('valid');
         inputEl.classList.remove('invalid');
     } else {
